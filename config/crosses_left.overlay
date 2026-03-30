@@ -1,12 +1,12 @@
 &trackball_peripheral {
-    cpi = <400>;
+    cpi = <200>;
     y-invert;
+	/delete-property/ x-invert;
 };
 
 &trackball_peripheral_split {
   device = <&trackball_peripheral>;
   input-processors
     = <&zip_xy_to_scroll_mapper>
-    , <&zip_scroll_scaler 1 4>
     , <&zip_ble_report_rate_limit>;
 };

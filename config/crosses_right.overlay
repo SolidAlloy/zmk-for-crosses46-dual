@@ -8,4 +8,9 @@
     input-processors 
         = <&zip_xy_scaler 2 1>
         , <&zip_ble_report_rate_limit>;
+		
+	sniper_override {
+        layers = <4>;
+        input-processors = <&zip_ble_report_rate_limit>;
+    };
 };

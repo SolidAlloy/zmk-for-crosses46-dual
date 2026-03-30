@@ -8,19 +8,19 @@
         lang_en: lang_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N1))>, <&to 0>; 
+            bindings = <&kp LC(LS(N1))>, <&macro_pause_for_release>, <&to 0>; 
         };
 		
 		lang_ua: lang_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N2))>, <&to 3>; 
+            bindings = <&kp LC(LS(N2))>, <&macro_pause_for_release>, <&to 2>; 
         };
 		
 		lang_jp: lang_jp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N3))>, <&to 0>; 
+            bindings = <&kp LC(LS(N3))>, <&macro_pause_for_release>, <&to 0>; 
         };
     };
 
@@ -72,5 +72,9 @@
                                                      &trans     &trans     &trans     &trans       &trans     &trans     
             >;
         };
+		
+		snipe_layer {
+			display-name = "Snipe";
+		};
     };
 };
