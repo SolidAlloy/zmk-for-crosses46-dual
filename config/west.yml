@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/Good-Great-Grand-Wonderful
     - name: SolidAlloy
       url-base: https://github.com/SolidAlloy
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: zmkfirmware
