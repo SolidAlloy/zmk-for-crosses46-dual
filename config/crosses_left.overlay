@@ -1,5 +1,3 @@
-#include <scroll-snap.dtsi>
-
 &trackball_peripheral {
     cpi = <200>;
     y-invert;
@@ -8,9 +6,5 @@
 
 &trackball_peripheral_split {
   device = <&trackball_peripheral>;
-  // Snaps the movement to X or Y automatically, THEN maps it to scroll
-  input-processors
-    = <&zip_scroll_snap>
-	, <&zip_xy_to_scroll_mapper>
-    , <&zip_ble_report_rate_limit>;
+  input-processors = <&zip_ble_report_rate_limit>;
 };
