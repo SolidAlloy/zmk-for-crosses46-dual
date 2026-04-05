@@ -1,3 +1,5 @@
+#include <scroll-snap.dtsi>
+
 &trackball_peripheral {
     cpi = <200>;
     y-invert;
