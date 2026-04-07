@@ -6,7 +6,7 @@
 
 &caps_word {
 	// Tells Caps Word to stay alive if you type an underscore, minus, or backspace
-	continue-list = <MINUS BACKSPACE DELETE>;
+	continue-list = <MINUS LSHIFT BACKSPACE DELETE>;
 };
 
 / {
@@ -101,9 +101,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-			quick-tap-ms = <125>; 
-			global-quick-tap;
+            tapping-term-ms = <200>;
             bindings = <&mo_shift>, <&kp>;
         };
     };
