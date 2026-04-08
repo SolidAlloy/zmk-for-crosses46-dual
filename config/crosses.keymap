@@ -116,7 +116,7 @@
             display-name = "Base";
             bindings = <
                 &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp ESC
-                &mo_cw 4   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
+                &mo_cw 4 0   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
                 &kp W &kp S  &kp N  &kp T  &kp H  &kp K    &kp MINUS &kp E  &kp A     &kp I   &kp C &kp B
                 &mo_cw_break 1 &kp V  &kp F  &kp G  &kp M  &kp J    &kp FSLH &kp SEMI  &kp DOT &kp COMMA &kp APOS &kp LCTRL
                         &kp LGUI    &mo_cw_break 3   &tap_hold LSHIFT R    &space_r    &kp RET    &kp LALT
