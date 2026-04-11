@@ -213,7 +213,7 @@
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp TAB   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
                 &mo_left_tab 4 W &mo_left 6 S  &td_n_num_word  &hrm_left LSHIFT T  &mo_left 7 H  &kp K    &kp MINUS &mo_left 7 E  &hrm_right RSHIFT A     &td_i_caps   &mo_right 6 C &kp B
-                &mo 1 &kpV  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp FSLH &kp SEMI  &kp DOT &kp COMMA &kp APOS &kp LALT
+                &mo 1 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp FSLH &kp SEMI  &kp DOT &kp COMMA &kp APOS &kp LALT
                         &kp LGUI   &tap_hold LSHIFT R   &mo 3    &kp SPACE    &kp RET    &kp LALT
             >;
         };
