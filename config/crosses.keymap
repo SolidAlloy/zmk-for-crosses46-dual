@@ -10,6 +10,10 @@
 	continue-list = <MINUS LSHIFT BACKSPACE DELETE>;
 };
 
+&num_word {
+	continue-list = <DOT COMMA BACKSPACE DELETE>;
+};
+
 / {
     macros {
         lang_en: lang_en {
