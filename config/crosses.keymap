@@ -296,8 +296,8 @@
 		helpers_layer {
             display-name = "Helpers";
             bindings = <
-                &alt_tab   &none     &none     &none     &none     &none     &none       &none     &none       &none       &none    &kp ESC
-                &kp RSHIFT		&none    &kp LS(N9)   &kp LS(N0)   &none   &kp LC(LS(T))   &kp LS(LEFT_BRACKET)    &kp LS(RIGHT_BRACKET)    &kp LS(N8)    &kp LS(N1)    &kp GRAVE    &kp DEL
+                &none   &none     &none     &none     &none     &none     &none       &none     &none       &none       &none    &none
+                &alt_tab		&kp ESC    &kp LS(N9)   &kp LS(N0)   &none   &kp LC(LS(T))   &kp LS(LEFT_BRACKET)    &kp LS(RIGHT_BRACKET)    &kp LS(N8)    &kp LS(N1)    &kp GRAVE    &kp DEL
                 &kp LA(W)   &none   &kp LCTRL    &kp LSHIFT       &none    &kp C_PLAY_PAUSE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp UP    &kp HOME   &kp END    &none
                 &sk LCTRL   &kp C_MUTE   &kp C_VOLUME_DOWN    &kp C_VOLUME_UP   &kp LG(V)   &kp LG(LS(S))    &kp BACKSLASH    &kp LEFT    &kp DOWN    &kp RIGHT   &kp PAGE_UP    &kp PAGE_DOWN
                                                      &kp LG(P)   &trans   &trans     &lang_en    &lang_ua    &lang_jp     
