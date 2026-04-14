@@ -68,11 +68,12 @@
 		mod_click: mod_click {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            // Add these to make the press instantaneous
-            wait-ms = <0>;
-            tap-ms = <0>;
+			// Give the OS 30ms to register the modifier before sending the click
+            wait-ms = <30>; 
+            tap-ms = <30>;
             bindings
-                = <&macro_press &kp MACRO_PLACEHOLDER>         // 1. Hold Control down
+                = <&macro_param_1to1>
+				, <&macro_press &kp MACRO_PLACEHOLDER>         // 1. Hold Control down
                 , <&macro_press &mkp LCLK>         // 2. Hold Left Click down
                 , <&macro_pause_for_release>       // 3. WAIT here until the physical key is released
                 , <&macro_release &mkp LCLK>       // 4. Release Left Click
@@ -207,7 +208,6 @@
 			hold-trigger-on-release;
         };
 		
-		// Home Row Mod for the LEFT hand (Triggers only if a RIGHT hand key is pressed)
         mo_mouse: mo_mouse {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -215,6 +215,18 @@
             tapping-term-ms = <170>;
             require-prior-idle-ms = <120>; // Highly recommended for HRM to prevent mid-word misfires
             bindings = <&mo>, <&kp>;
+            // The array of all RIGHT-hand keys
+            hold-trigger-key-positions = <27 28 29 40 41>;
+			hold-trigger-on-release;
+        };
+		
+		mo_mouse_break_num: mo_mouse_break_num {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            require-prior-idle-ms = <120>; // Highly recommended for HRM to prevent mid-word misfires
+            bindings = <&mo_cw_break>, <&kp>;
             // The array of all RIGHT-hand keys
             hold-trigger-key-positions = <27 28 29 40 41>;
 			hold-trigger-on-release;
@@ -308,7 +320,7 @@
 			bindings = <
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
                 &trans         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &trans
-                &trans         &kp N1   &mo_mouse 3 N2   &kp N3 &kp N4 &kp N5  &kp N6 &kp N7  &kp N8     &kp N9   &kp N0  &trans
+                &trans         &kp N1   &mo_mouse_break_num 3 N2   &kp N3 &kp N4 &kp N5  &kp N6 &kp N7  &kp N8     &kp N9   &kp N0  &trans
                 &trans         &none     &none     &trans     &none     &none     &trans       &trans     &trans       &trans       &trans       &trans
                                                      &trans     &trans     &none     &trans       &trans     &trans     
             >;
