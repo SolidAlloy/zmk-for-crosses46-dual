@@ -403,13 +403,13 @@
         
         combo_dollar {
             timeout-ms = <50>;
-            key-positions = <8 9>; 
+            key-positions = <14 15>;
             bindings = <&kp LS(N4)>;
         };
         
         combo_at {
             timeout-ms = <50>;
-            key-positions = <2 3>; 
+            key-positions = <20 21>; 
             bindings = <&kp LS(N2)>;
         };
     };
