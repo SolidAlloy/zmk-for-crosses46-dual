@@ -58,12 +58,13 @@
 			// Give the OS 30ms to register the modifier before sending the click
             wait-ms = <30>; 
             tap-ms = <30>;
-            bindings
+			bindings
                 = <&macro_param_1to1>
-				, <&macro_press &kp MACRO_PLACEHOLDER>         // 1. Hold Control down
-                , <&macro_press &mkp LCLK>         // 2. Hold Left Click down
-                , <&macro_pause_for_release>       // 3. WAIT here until the physical key is released
-                , <&macro_release &mkp LCLK>       // 4. Release Left Click
+                , <&macro_press &kp MACRO_PLACEHOLDER>         // 1. Hold Control down
+                , <&macro_press &mkp LCLK>                     // 2. Hold Left Click down
+                , <&macro_pause_for_release>                   // 3. WAIT here until the physical key is released
+                , <&macro_release &mkp LCLK>                   // 4. Release Left Click
+                , <&macro_param_1to1>                          // <--- ADD THIS LINE HERE
                 , <&macro_release &kp MACRO_PLACEHOLDER>       // 5. Release Control
                 ;
         };
