@@ -223,10 +223,10 @@
 		
         caps_ctrl: caps_ctrl {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             flavor = "balanced";
             tapping-term-ms = <170>;
-            bindings = <&caps_word>, <&kp RCTRL>;
+            bindings = <&caps_word>, <&kp>;
         };
     };
 	
@@ -520,7 +520,7 @@
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
                 &kp W &kp S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &kp K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &mo_right 5 I   &kp C &kp B
-                &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl
+                &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl RCTRL
                         &kp LGUI   &mo_tab 4 TAB    &kp R    &kp SPACE    &kp RET    &kp LALT
             >;
         };
