@@ -25,7 +25,7 @@
 		lang_ua: lang_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N2))>, <&macro_pause_for_release>, <&to 2>; 
+            bindings = <&kp LC(LS(N2))>, <&macro_pause_for_release>, <&to 1>; 
         };
 		
 		lang_jp: lang_jp {
@@ -220,6 +220,14 @@
             bindings = <&mo>, <&kp>;
 			hold-trigger-key-positions = <48>; // a key that will certainly not be used for rolling. Everything else should result in tap.
         };
+		
+        caps_ctrl: caps_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            bindings = <&caps_word>, <&kp RCTRL>;
+        };
     };
 	
 	combos {
@@ -270,7 +278,7 @@
 		combo_shortcut_shift {
             timeout-ms = <50>;
             key-positions = <36 49>; 
-            bindings = <&mo_mod 1 LSHIFT>; 
+            bindings = <&mo_mod 2 LSHIFT>; 
         };
 		
 		combo_shift_tab {
@@ -512,8 +520,19 @@
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
                 &kp W &kp S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &kp K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &mo_right 5 I   &kp C &kp B
-                &mo_cw_break 1 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_word
+                &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl
                         &kp LGUI   &mo_tab 4 TAB    &kp R    &kp SPACE    &kp RET    &kp LALT
+            >;
+        };
+		
+		ua_layer {
+            display-name = "Ukrainian";
+            bindings = <
+                &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
+                &kp ESC   &kp A  &kp O  &kp E  &kp DOT  &kp APOS    &kp U &kp G  &kp K     &kp COMMA   &kp SEMI    &kp BSPC
+                &kp Q &kp H  &mo_mouse 3 F  &hrm_left LSHIFT J  &mo_left 7 T  &kp S    &kp V &mo_right 7 D  &hrm_right RSHIFT Y  &mo_right 5 N   &kp C &kp P
+                &mo_cw_break 2 &kp W  &kp M  &lt_scroll 8 Z  &kp B  &kp RIGHT_BRACKET    &kp LEFT_BRACKET  &kp R  &kp FSLH &kp LS(FSLH) &kp X &caps_word
+                        &kp LGUI   &mo_tab 4 I    &kp L    &kp SPACE    &kp RET    &kp LALT
             >;
         };
 
@@ -525,17 +544,6 @@
                 &kp LC(LS(Z))    &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(H)      &kp LC(MINUS)    &none   &kp LC(UP)   &kp LC(HOME)   &kp LC(END)   &none
                 &none    &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)     &kp LC(B)      &kp LC(N)   &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(RIGHT)   &kp LC(PAGE_UP) &kp LC(PAGE_DOWN)
                                             &trans     &kp LSHIFT       &trans      &trans  &trans   &trans
-            >;
-        };
-
-        ua_layer {
-            display-name = "Ukrainian";
-            bindings = <
-                &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
-                &kp ESC   &kp A  &kp O  &kp E  &kp DOT  &kp APOS    &kp U &kp G  &kp K     &kp COMMA   &kp SEMI    &kp BSPC
-                &kp Q &kp H  &mo_mouse 3 F  &hrm_left LSHIFT J  &mo_left 7 T  &kp S    &kp V &mo_right 7 D  &hrm_right RSHIFT Y  &mo_right 5 N   &kp C &kp P
-                &mo 1 &kp W  &kp M  &lt_scroll 8 Z  &kp B  &kp RIGHT_BRACKET    &kp LEFT_BRACKET  &kp R  &kp FSLH &kp LS(FSLH) &kp X &caps_word
-                        &kp LGUI   &mo_tab 4 I    &kp L    &kp SPACE    &kp RET    &kp LALT
             >;
         };
 
