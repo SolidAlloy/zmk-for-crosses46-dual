@@ -343,7 +343,7 @@
             key-positions = <31 34>; 
             bindings = <&kp LS(N7)>;
 			layers = <2>;
-        }
+        };
 		
 		combo_pipe_en {
             timeout-ms = <50>;
