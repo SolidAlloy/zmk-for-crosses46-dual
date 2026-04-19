@@ -72,17 +72,17 @@
 		task_mgr: task_mgr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            
-            // Give Windows 30ms to register the modifiers before Esc hits
-            wait-ms = <30>; 
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             
             bindings
                 = <&macro_press &kp LCTRL>             // 1. Hold Control
                 , <&macro_press &kp LSHIFT>            // 2. Hold Shift
-                , <&macro_tap &kp ESC>                 // 3. Tap Escape
-                , <&macro_release &kp LSHIFT>          // 4. Release Shift
-                , <&macro_release &kp LCTRL>           // 5. Release Control
+                , <&macro_press &kp ESC>               // 3. Hold Escape (Changed from tap)
+                , <&macro_pause_for_release>           // 4. WAIT: Hold all 3 until you lift your finger
+                , <&macro_release &kp ESC>             // 5. Release Escape
+                , <&macro_release &kp LSHIFT>          // 6. Release Shift
+                , <&macro_release &kp LCTRL>           // 7. Release Control
                 ;
         };
 		
