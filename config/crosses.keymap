@@ -55,17 +55,18 @@
 		mod_click: mod_click {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-			// Give the OS 30ms to register the modifier before sending the click
-            wait-ms = <30>; 
+            wait-ms = <30>;
             tap-ms = <30>;
-			bindings
+            
+            bindings
                 = <&macro_param_1to1>
-                , <&macro_press &kp MACRO_PLACEHOLDER>         // 1. Hold Control down
+                , <&macro_press &kp MACRO_PLACEHOLDER>         // 1. Hold Control/Shift down
                 , <&macro_press &mkp LCLK>                     // 2. Hold Left Click down
                 , <&macro_pause_for_release>                   // 3. WAIT here until the physical key is released
                 , <&macro_release &mkp LCLK>                   // 4. Release Left Click
-                , <&macro_param_1to1>                          // <--- ADD THIS LINE HERE
-                , <&macro_release &kp MACRO_PLACEHOLDER>       // 5. Release Control
+                , <&macro_wait_time 100>                       // Force a 100ms gap before the next action
+                , <&macro_param_1to1>                          
+                , <&macro_release &kp MACRO_PLACEHOLDER>       // 5. Release Control/Shift
                 ;
         };
 		
@@ -298,7 +299,7 @@
             timeout-ms = <50>;
             key-positions = <26 27>; 
             bindings = <&kp LS(N6)>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_plus {
@@ -336,7 +337,7 @@
             timeout-ms = <50>;
             key-positions = <31 33>; 
             bindings = <&kp LS(BSLH)>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_question_en {
@@ -350,7 +351,7 @@
             timeout-ms = <50>;
             key-positions = <31 34>; 
             bindings = <&kp LS(N7)>;
-			layers = <2>;
+			layers = <1>;
         };
 		
 		combo_pipe_en {
@@ -364,7 +365,7 @@
             timeout-ms = <50>;
             key-positions = <31 32 33>; 
             bindings = <&kp MINUS>;
-			layers = <2>;
+			layers = <1>;
         };
 		
 		combo_percent {
@@ -397,14 +398,14 @@
             timeout-ms = <50>;
             key-positions = <39 40>; 
             bindings = <&kp GRAVE>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_g_ua {
             timeout-ms = <50>;
             key-positions = <43 44>; 
             bindings = <&kp NON_US_BSLH>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_square_left_en {
@@ -425,14 +426,14 @@
             timeout-ms = <50>;
             key-positions = <37 38>;
             bindings = <&kp LS(N4)>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_equals_ua {
             timeout-ms = <50>;
             key-positions = <45 46>; 
             bindings = <&kp EQUAL>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_parentreses_left {
@@ -500,7 +501,7 @@
             timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp LS(GRAVE)>;
-			layers = <2>;
+			layers = <1>;
         };
         
         combo_at {
