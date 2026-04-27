@@ -288,18 +288,19 @@
             bindings = <&kp LS(TAB)>;
         };
 		
-		combo_colon_en {
-            timeout-ms = <50>;
-            key-positions = <26 27>; 
-            bindings = <&kp LS(SEMI)>;
-			layers = <0>;
-        };
 		
 		combo_colon_ua {
             timeout-ms = <50>;
             key-positions = <26 27>; 
             bindings = <&kp LS(N6)>;
 			layers = <1>;
+        };
+		
+		combo_colon_en {
+            timeout-ms = <50>;
+            key-positions = <26 27>; 
+            bindings = <&kp LS(SEMI)>;
+			layers = <0>;
         };
         
         combo_plus {
@@ -326,27 +327,20 @@
             bindings = <&kp LS(N1)>;
         };
         
-        combo_slash_en {
-            timeout-ms = <50>;
-            key-positions = <31 33>; 
-            bindings = <&kp FSLH>;
-			layers = <0>;
-        }; 
-		
 		combo_slash_ua {
             timeout-ms = <50>;
             key-positions = <31 33>; 
             bindings = <&kp LS(BSLH)>;
 			layers = <1>;
         };
-        
-        combo_question_en {
+		
+        combo_slash_en {
             timeout-ms = <50>;
-            key-positions = <31 34>; 
-            bindings = <&kp LS(FSLH)>;
+            key-positions = <31 33>; 
+            bindings = <&kp FSLH>;
 			layers = <0>;
         };
-		
+        
 		combo_question_ua {
             timeout-ms = <50>;
             key-positions = <31 34>; 
@@ -354,10 +348,10 @@
 			layers = <1>;
         };
 		
-		combo_pipe_en {
+        combo_question_en {
             timeout-ms = <50>;
-            key-positions = <31 32 33>; 
-            bindings = <&kp LS(BSLH)>;
+            key-positions = <31 34>; 
+            bindings = <&kp LS(FSLH)>;
 			layers = <0>;
         };
 		
@@ -366,6 +360,13 @@
             key-positions = <31 32 33>; 
             bindings = <&kp MINUS>;
 			layers = <1>;
+        };
+		
+		combo_pipe_en {
+            timeout-ms = <50>;
+            key-positions = <31 32 33>; 
+            bindings = <&kp LS(BSLH)>;
+			layers = <0>;
         };
 		
 		combo_percent {
@@ -380,13 +381,27 @@
             bindings = <&kp BSLH>;
         };
         
+		combo_apos_ua {
+            timeout-ms = <50>;
+            key-positions = <39 40>; 
+            bindings = <&kp GRAVE>;
+			layers = <1>;
+        };
+		
+		combo_g_ua {
+            timeout-ms = <50>;
+            key-positions = <43 44>; 
+            bindings = <&kp NON_US_BSLH>;
+			layers = <1>;
+        };
+		
         combo_brace_left_en {
             timeout-ms = <50>;
             key-positions = <39 40>; 
             bindings = <&kp LS(LBKT)>;
 			layers = <0>;
         };
-        
+		
         combo_brace_right_en {
             timeout-ms = <50>;
             key-positions = <43 44>; 
@@ -394,17 +409,17 @@
 			layers = <0>;
         };
 		
-		combo_apos_ua {
+		combo_semi_ua {
             timeout-ms = <50>;
-            key-positions = <39 40>; 
-            bindings = <&kp GRAVE>;
+            key-positions = <37 38>;
+            bindings = <&kp LS(N4)>;
 			layers = <1>;
         };
-        
-        combo_g_ua {
+		
+		combo_equals_ua {
             timeout-ms = <50>;
-            key-positions = <43 44>; 
-            bindings = <&kp NON_US_BSLH>;
+            key-positions = <45 46>; 
+            bindings = <&kp EQUAL>;
 			layers = <1>;
         };
         
@@ -420,20 +435,6 @@
             key-positions = <45 46>; 
             bindings = <&kp RBKT>;
 			layers = <0>;
-        };
-		
-		combo_semi_ua {
-            timeout-ms = <50>;
-            key-positions = <37 38>;
-            bindings = <&kp LS(N4)>;
-			layers = <1>;
-        };
-        
-        combo_equals_ua {
-            timeout-ms = <50>;
-            key-positions = <45 46>; 
-            bindings = <&kp EQUAL>;
-			layers = <1>;
         };
         
         combo_parentreses_left {
@@ -489,19 +490,19 @@
             key-positions = <44 45 46>;
             bindings = <&kp GRAVE>;
         };
-        
-        combo_dollar_en {
-            timeout-ms = <50>;
-            key-positions = <14 15>;
-            bindings = <&kp LS(N4)>;
-			layers = <0>;
-        };
 		
 		combo_uah_ua {
             timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp LS(GRAVE)>;
 			layers = <1>;
+        };
+        
+        combo_dollar_en {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&kp LS(N4)>;
+			layers = <0>;
         };
         
         combo_at {
