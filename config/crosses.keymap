@@ -288,7 +288,6 @@
             bindings = <&kp LS(TAB)>;
         };
 		
-		
 		combo_colon_ua {
             timeout-ms = <50>;
             key-positions = <26 27>; 
@@ -416,10 +415,10 @@
 			layers = <1>;
         };
 		
-		combo_equals_ua {
+		combo_quotes_ua {
             timeout-ms = <50>;
             key-positions = <45 46>; 
-            bindings = <&kp EQUAL>;
+            bindings = <&kp LS(N2)>;
 			layers = <1>;
         };
         
@@ -454,8 +453,15 @@
             key-positions = <37 40>; 
             bindings = <&kp LS(N6)>;
         };
+		
+		combo_equals_ua {
+            timeout-ms = <50>;
+            key-positions = <43 46>; 
+            bindings = <&kp EQUAL>;
+			layers = <1>;
+        };
         
-        combo_ampersand {
+        combo_ampersand_en {
             timeout-ms = <50>;
             key-positions = <43 46>; 
             bindings = <&kp LS(N7)>;
@@ -542,7 +548,7 @@
             display-name = "Shortcuts";
             bindings = <
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
-                &kp LC(TAB)    &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(T)     &kp LC(EQUAL)   &none &none   &none    &none &kp LC(BSPC)
+                &kp LC(TAB)    &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(T)     &kp LC(EQUAL)   &none &none   &kp LC(O)    &none &kp LC(BSPC)
                 &kp LC(LS(Z))    &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(H)      &kp LC(MINUS)    &none   &kp LC(UP)   &kp LC(HOME)   &kp LC(END)   &none
                 &none    &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)     &kp LC(B)      &kp LC(N)   &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(RIGHT)   &kp LC(PAGE_UP) &kp LC(PAGE_DOWN)
                                             &trans     &kp LSHIFT       &trans      &trans  &trans   &trans
