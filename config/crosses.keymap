@@ -266,13 +266,13 @@
 		
 		combo_num_ctrl {
             timeout-ms = <50>;
-            key-positions = <33 51>; 
+            key-positions = <29 51>; 
             bindings = <&mo_mod 5 LCTRL>; 
         };
 		
 		combo_num_f {
             timeout-ms = <50>;
-            key-positions = <33 52>; 
+            key-positions = <29 52>; 
             bindings = <&mo 6>; 
         };
 		
@@ -527,7 +527,7 @@
             bindings = <
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
-                &kp W &kp S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &kp K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &mo_right 5 I   &kp C &kp B
+                &kp W &kp S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &mo_right 5 K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &kp I   &kp C &kp B
                 &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl RCTRL 0
                         &kp LGUI   &mo_tab 4 TAB    &kp R    &kp SPACE    &kp RET    &kp LALT
             >;
@@ -538,7 +538,7 @@
             bindings = <
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp A  &kp O  &kp E  &kp DOT  &kp APOS    &kp U &kp G  &kp K     &kp COMMA   &kp SEMI    &kp BSPC
-                &kp Q &kp H  &mo_mouse 3 F  &hrm_left LSHIFT J  &mo_left 7 T  &kp S    &kp V &mo_right 7 D  &hrm_right RSHIFT Y  &mo_right 5 N   &kp C &kp P
+                &kp Q &kp H  &mo_mouse 3 F  &hrm_left LSHIFT J  &mo_left 7 T  &mo_right 5 S    &kp V &mo_right 7 D  &hrm_right RSHIFT Y  &kp N   &kp C &kp P
                 &mo_cw_break 2 &kp W  &kp M  &lt_scroll 8 Z  &kp B  &kp RIGHT_BRACKET    &kp LEFT_BRACKET  &kp R  &kp FSLH &kp LS(FSLH) &kp X &caps_word
                         &kp LGUI   &mo_tab 4 I    &kp L    &kp SPACE    &kp RET    &kp LALT
             >;
@@ -581,10 +581,10 @@
 			display-name = "Numbers";
 			bindings = <
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
-                &none         &none     &kp N7     &kp N8     &kp N9     &none     &none       &none     &none       &none       &none       &none
-                &none         &none     &kp N4     &kp N5     &kp N6     &none  &none    &none  &none     &none   &none  &none
-                &none         &kp N0    &kp N1     &kp N2     &kp N3     &none     &none    &none  &none     &none   &none  &none
-                                                     &none     &kp COMMA     &kp DOT     &kp LCTRL       &mo 6     &none     
+                &none         &none      &none     &none       &none     &none       &none     &kp N7     &kp N8     &kp N9      &none       &trans
+                &none         &none      &none  &none    &none  &none     &kp DOT                &kp N4     &kp N5     &kp N6     &kp N0  &none
+                &none         &none     &none     &none    &none  &none     &kp FSLH             &kp N1     &kp N2     &kp N3       &none  &none
+                                                     &none     &none     &none     &kp LCTRL       &mo 6     &none     
             >;
 		};
 		
@@ -592,9 +592,9 @@
 			display-name = "F Numbers";
 			bindings = <
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
-                &none         &kp F12     &kp F7     &kp F8     &kp F9     &none     &none     &none       &none     &none       &none       &none
-                &none         &kp F11     &kp F4     &kp F5     &kp F6  &none     &none     &none       &none     &none       &none       &none
-                &none         &kp F10    &kp F1     &kp F2     &kp F3  &none     &none       &none     &none       &none       &none       &none
+                &none             &none     &none     &none       &none     &none       &none     &kp F7     &kp F8     &kp F9     &kp F10    &none
+                &none          &none     &none     &none       &none     &none       &none        &kp F4     &kp F5     &kp F6  &kp F11    &none
+                &none         &none     &none       &none     &none       &none       &none      &kp F1     &kp F2     &kp F3    &kp F12    &none
                                                                 &none     &kp LALT    &kp LCTRL     &none       &none     &none
             >;
 		};
