@@ -266,13 +266,13 @@
 		
 		combo_num_ctrl {
             timeout-ms = <50>;
-            key-positions = <29 51>; 
+            key-positions = <29 52>; 
             bindings = <&mo_mod 5 LCTRL>; 
         };
 		
 		combo_num_f {
             timeout-ms = <50>;
-            key-positions = <29 52>; 
+            key-positions = <29 53>; 
             bindings = <&mo 6>; 
         };
 		
@@ -616,7 +616,7 @@
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
-                &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
+                &none         &none     &kp LCTRL     &none     &none     &none     &none       &none     &none       &none       &none       &none
                                                      &none     &none     &none     &none       &none     &none     
             >;
 		};
