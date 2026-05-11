@@ -31,7 +31,7 @@
 		lang_jp: lang_jp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N3))>, <&macro_pause_for_release>, <&to 0>; 
+            bindings = <&kp LC(LS(N5))>, <&macro_pause_for_release>, <&to 0>; 
         };
 		
 		snap_left: snap_left {
@@ -528,7 +528,7 @@
             bindings = <
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
-                &kp W &kp S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &mo_right 5 K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &kp I   &kp C &kp B
+                &kp W &mo_left 5 S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &kp K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &kp I   &kp C &kp B
                 &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl RCTRL 0
                         &kp LGUI   &mo_tab 4 TAB    &kp R    &kp SPACE    &kp RET    &kp LALT
             >;
