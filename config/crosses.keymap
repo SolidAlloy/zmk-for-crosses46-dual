@@ -528,7 +528,7 @@
             bindings = <
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
-                &kp W &mo_left 5 S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &kp K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &kp I   &kp C &kp B
+                &kp W &mo_left 5 S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &mo_left 6 K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &kp I   &kp C &kp B
                 &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl RCTRL 0
                         &kp LGUI   &mo_tab 4 TAB    &kp R    &kp SPACE    &kp RET    &kp LALT
             >;
@@ -584,8 +584,8 @@
                 &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
                 &none         &none      &none     &none       &none     &none       &trans     &kp N7     &kp N8     &kp N9      &none       &trans
                 &none         &none      &none  &none    &none  &none     &trans                &kp N4     &kp N5     &kp N6     &kp N0  &none
-                &none         &none     &none     &none    &none  &none     &kp DOT             &kp N1     &kp N2     &kp N3       &none  &none
-                                                     &none     &none     &none     &trans   &kp LCTRL       &mo 6
+                &none         &none     &none     &none    &none  &none     &none             &kp N1     &kp N2     &kp N3       &none  &none
+                                                     &trans     &trans     &kp LCTRL     &trans   &kp DOT       &trans
             >;
 		};
 		
@@ -596,7 +596,7 @@
                 &none             &none     &none     &none       &none     &none       &none     &kp F7     &kp F8     &kp F9     &kp F10    &none
                 &none          &none     &none     &none       &none     &none       &none        &kp F4     &kp F5     &kp F6  &kp F11    &none
                 &none         &none     &none       &none     &none       &none       &none      &kp F1     &kp F2     &kp F3    &kp F12    &none
-                                                                &none     &kp LALT    &kp LCTRL     &none       &none     &none
+                                                                &none     &none    &kp LCTRL     &kp LALT       &none     &none
             >;
 		};
 		

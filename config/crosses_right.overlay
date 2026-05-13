@@ -42,3 +42,7 @@
     = <&zip_xy_to_scroll_mapper>
     , <&zip_scroll_snap>;
 };
+
+&trackball_central {
+    wakeup-source;
+};
