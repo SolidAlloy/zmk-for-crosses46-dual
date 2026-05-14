@@ -529,7 +529,7 @@
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
                 &kp W &mo_left 5 S  &mo_mouse 3 N  &hrm_left LSHIFT T  &mo_left 7 H  &mo_left 6 K    &kp MINUS &mo_right 7 E  &hrm_right RSHIFT A  &kp I   &kp C &kp B
-                &mo_cw_break 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl RCTRL 0
+                &mo 2 &kp V  &kp F  &lt_scroll 8 G  &kp M  &kp J    &kp SEMI &kp APOS  &kp DOT &kp COMMA &kp LS(APOS) &caps_ctrl RCTRL 0
                         &kp LGUI   &mo_tab 4 TAB    &kp R    &kp SPACE    &kp RET    &kp LALT
             >;
         };
@@ -540,7 +540,7 @@
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
                 &kp ESC   &kp A  &kp O  &kp E  &kp DOT  &kp APOS    &kp U &kp G  &kp K     &kp COMMA   &kp SEMI    &kp BSPC
                 &kp Q &kp H  &mo_mouse 3 F  &hrm_left LSHIFT J  &mo_left 7 T  &mo_right 5 S    &kp V &mo_right 7 D  &hrm_right RSHIFT Y  &kp N   &kp C &kp P
-                &mo_cw_break 2 &kp W  &kp M  &lt_scroll 8 Z  &kp B  &kp RIGHT_BRACKET    &kp LEFT_BRACKET  &kp R  &kp FSLH &kp LS(FSLH) &kp X &caps_word
+                &mo 2 &kp W  &kp M  &lt_scroll 8 Z  &kp B  &kp RIGHT_BRACKET    &kp LEFT_BRACKET  &kp R  &kp FSLH &kp LS(FSLH) &kp X &caps_word
                         &kp LGUI   &mo_tab 4 I    &kp L    &kp SPACE    &kp RET    &kp LALT
             >;
         };
