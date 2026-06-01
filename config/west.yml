@@ -2,8 +2,8 @@ manifest:
   defaults:
     revision: main
   remotes:
-    - name: jondonas
-      url-base: https://github.com/jondonas
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: Good-Great-Grand-Wonderful
       url-base: https://github.com/Good-Great-Grand-Wonderful
     - name: SolidAlloy
@@ -18,8 +18,8 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: jondonas
-      revision: prior-idle-ignore
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
     - name: gggw-zmk-keebs
       remote: SolidAlloy
