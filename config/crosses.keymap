@@ -554,9 +554,9 @@
             display-name = "Shortcuts";
             bindings = <
                 &none &none &none &none &none &none   &none &none  &none     &none   &none    &none
-                &kp LC(TAB)    &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(T)     &kp LC(EQUAL)   &none &none   &kp LC(O)    &none &kp LC(BSPC)
-                &kp LC(LS(Z))    &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(H)      &kp LC(MINUS)    &none   &kp LC(UP)   &kp LC(HOME)   &kp LC(END)   &none
-                &none    &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)     &kp LC(B)      &kp LC(N)   &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(RIGHT)   &kp LC(PAGE_UP) &kp LC(PAGE_DOWN)
+                &kp LC(TAB)    &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(T)     &kp LC(EQUAL)   &kp LC(U) &kp LC(I)   &kp LC(O)    &kp LC(P) &kp LC(BSPC)
+                &kp LC(LS(Z))    &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(H)      &kp LC(MINUS)    &kp LC(J)   &kp LC(K)   &kp LC(L)  &none   &none
+                &none    &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)     &kp LC(B)      &kp LC(N)   &kp LC(M)    &none    &none   &none   &none
                                             &trans     &kp LSHIFT       &trans      &trans  &trans   &trans
             >;
         };
